@@ -1,6 +1,6 @@
 # Docker-laravel
 
-En este proyecto, seguiré usando [Docker](https://www.docker.com/), pero esta vez tratarée de poner en ejecución algo más complejo. Una aplicación [Laravel](http://laravel.com/), conectada a una base de datos [Mysql](https://www.mysql.com/) y...
+En este proyecto, seguiré usando [Docker](https://www.docker.com/), pero esta vez trataré de poner en ejecución algo más complejo. Una aplicación [Laravel](http://laravel.com/), conectada a una base de datos [Mysql](https://www.mysql.com/) y...
 
 <!-- para ejecutarse en el back y exponer un API. Así también conectarse con otra aplicación cuyo fin principal será exponer otro API (solo para búsquedas), una aplicación en AngularJs para consumir el API y finalmente un Website que también tenga acceso al API de búsqueda. Todas las aplicaciones deberan tener acceso a la misma base de datos. Y todos deberán funcionar en contenedores separados, pero conectados entre sí. -->
 
@@ -19,11 +19,13 @@ Cita tomada de [Wikipedia](https://es.wikipedia.org/wiki/Docker_(software))
 	- Para [Windows](https://docs.docker.com/docker-for-windows/) 
 	- Para [Mac](https://docs.docker.com/docker-for-mac/)
 - Docker-compose 1.22.0
-- Laravel [Instalación](https://laravel.com/docs/5.7/installation). En Github: [Releases](https://github.com/laravel/laravel/releases)
+- Laravel 
+	- Para [Instalar](https://laravel.com/docs/5.7/installation). En Github: [Releases](https://github.com/laravel/laravel/releases)
 - Imagenes descargadas desde el repositorio de [docker](https://hub.docker.com):
-	- php:7-apache
+	- Laravel51
+	- php:7
 	- mysql:5.7
-	- phpmyadmin/phpmyadmin
+	- phpmyadmin
 
 ## Install / Instalación
 #### OS X, Linux y Windows
@@ -57,7 +59,7 @@ Al usarse las banderas -it esto nos permitira iniciar el contenedor (basandose e
 - [x] Instalación de Docker
 - [x] Instalación de Docker-compose
 - [x] Configuración de Laravel
-- [x] Pruebas en local
+- [ ] Pruebas en local
 - [ ] Actualización de repositorio
 - [ ] Despliegue en ...
 
