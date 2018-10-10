@@ -44,3 +44,6 @@ RUN composer install --no-interaction
 
 #change ownership of our applications
 RUN chown -R www-data:www-data $APP_HOME
+
+CMD php artisan serve --host=0.0.0.0 --port=4000
+EXPOSE 4000
